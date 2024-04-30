@@ -1,0 +1,8 @@
+(library
+  (name lib)
+  (public_name ocaml.lib)
+  (foreign_stubs
+    (language c)
+    (names stubs)
+    (flags (:standard) -O2 -fPIC -DPIC))
+)
