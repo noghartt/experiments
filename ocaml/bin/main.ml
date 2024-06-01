@@ -1,3 +1,6 @@
-open Lib
+let ( >>:: ) a = print_endline a
 
-let () = print_endline @@ string_of_int @@ Stub.add_two_int 1 2
+let () =
+  let hello = "Hello, World!" in
+  (>>::) hello
+
