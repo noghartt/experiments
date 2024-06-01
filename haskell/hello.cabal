@@ -33,7 +33,11 @@ flag threaded
 executable hello
   hs-source-dirs: src
   main-is: hello.hs
-  build-depends: base >= 4.2 && < 5
+  build-depends:
+    base >= 4.2 && < 5,
+    containers,
+    megaparsec == 9.6.1,
+    text
 
   if flag(threaded)
      ghc-options: -threaded
