@@ -34,7 +34,6 @@
             graalvm-ce
             diffutils
           ];
-
         };
       }
   );
